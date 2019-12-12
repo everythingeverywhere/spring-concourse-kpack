@@ -31,4 +31,4 @@ build/
 .vscode/
 
 ### shh secr
-./garbage.txt
+./garbage.yaml

@@ -14,7 +14,6 @@ resources:
     uri: git@github.com:everythingeverywhere/spring-concourse-kpack.git
     branch: stable
     private_key: ((github-private-key))
- 
 jobs:
 - name: run-tests
   plan:
