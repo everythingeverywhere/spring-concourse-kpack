@@ -38,7 +38,7 @@ jobs:
             echo 'ls ::'
             ls  
             cd source-master
-            mvn package
+            # mvn package
 - name: promote-to-stable
   plan:
   - get: source-master
