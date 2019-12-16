@@ -33,11 +33,8 @@ jobs:
           - -exec
           - |
             cd source-master
-            echo 'pwd ::'
-            pwd 
-            echo 'ls ::'
-            ls  
-            # mvn package
+            cd boot-kpack-demo
+            mvn package
 - name: promote-to-stable
   plan:
   - get: source-master
