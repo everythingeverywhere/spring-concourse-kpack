@@ -37,7 +37,7 @@ jobs:
             pwd 
             echo 'ls ::'
             ls  
-            mvn package
+            # mvn package
 - name: promote-to-stable
   plan:
   - get: source-master
