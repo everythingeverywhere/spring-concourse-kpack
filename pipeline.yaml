@@ -33,8 +33,7 @@ jobs:
           - -exec
           - |
             cd source-master
-            cd boot-kpack-demo
-            mvn package
+            ls
 - name: promote-to-stable
   plan:
   - get: source-master
