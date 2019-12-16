@@ -5,16 +5,15 @@ resources:
   type: git
   icon: github-circle
   source:
-    uri: https://github.com/rseroter/boot-kpack-demo
+    uri: https://github.com/everythingeverywhere/spring-concourse-kpack
     branch: master
 - name: source-stable
   type: git
   icon: github-circle
   source:
-    uri: git@github.com:rseroter/boot-kpack-demo.git
+    uri: git@github.com:everythingeverywhere/spring-concourse-kpack.git
     branch: stable
     private_key: ((github-private-key))
- 
 jobs:
 - name: run-tests
   plan:
@@ -38,6 +37,10 @@ jobs:
             echo 'ls ::'
             ls  
             cd source-master
+            echo 'pwd ::'
+            pwd 
+            echo 'ls ::'
+            ls  
             mvn package
 - name: promote-to-stable
   plan:
