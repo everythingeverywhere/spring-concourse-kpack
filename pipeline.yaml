@@ -33,6 +33,10 @@ jobs:
           args:
           - -exec
           - |
+            echo 'pwd ::'
+            pwd 
+            echo 'ls ::'
+            ls  
             cd source-master
             mvn package
 - name: promote-to-stable
