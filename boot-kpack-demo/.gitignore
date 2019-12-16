@@ -29,3 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### shh secr
+./garbage.yaml
